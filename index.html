@@ -9,11 +9,16 @@
     The body tag is the main content area of an HTML document
   -->
   <body>
-    <li>
-      <ul>
-        <a href="survey.html">Take the Mukbang Survey</a>
-      </ul>
-    </li>
+    <!--
+    The nav tag is used to define a navigation section
+  -->
+    <nav>
+      <li>
+        <ul>
+          <a href="survey.html">Take the Mukbang Survey</a>
+        </ul>
+      </li>
+    </nav>
     <!--
       The h1 tag is used for main headings
     -->
@@ -27,15 +32,24 @@
       lines of text
     -->
     <br />
-
-    <h2>What is a Mukbang?</h2>
-    <p>
-      A mukbang is a video that has someone (usually the host) eating a large
-      quantity of food with their audience. And the quantities of food got
-      <br />
-      progressively larger over time, leading to more extravagant and visually
-      "appealing" presentations.
-    </p>
+    <!--
+      The u tag is used to underline text
+    -->
+    <section>
+      <u>
+        <h2>What is a Mukbang?</h2>
+      </u>
+      <!--
+      The p tag is used to define a paragraph
+    -->
+      <p>
+        A mukbang is a video that has someone (usually the host) eating a large
+        quantity of food with their audience. And the quantities of food got
+        <br />
+        progressively larger over time, leading to more extravagant and visually
+        <i>"appealing"</i> presentations.
+      </p>
+    </section>
     <br />
     <!--
       The img tag, is a tag that lets developers
@@ -45,27 +59,34 @@
       src="images.html/images.jpg"
       alt="Mukbang Example"
       width="500px" /><br />
-
-    <h2>How it started out</h2>
-    <p>
-      Mukbangs started out as a South Korean live stream around 2009 and was
-      live-streaming on platforms like AfreecaTV, as a cultural response to
+    <!--
+    The section tag is used to define sections in a document, such as chapters,
+    headers, footers, or any other sections of the document
+  -->
+    <section>
+      <h2>How it started out</h2>
+      <p>
+        Mukbangs started out as a South Korean live stream around 2009 and was
+        live-streaming on platforms like AfreecaTV, as a cultural response to
+        <br />
+        loneliness and <b>changing eating habits in South Korea.</b>
+      </p>
       <br />
-      loneliness and changing eating habits in South Korea.
-    </p>
-    <br />
-
-    <h2>How it rose to fame</h2>
-    <p>
-      Mukbangs gained popularity through social media influencers like Tzuyang,
-      Hamzy, Nikocado Avocado, Bloveslife, and Trisha Paytas,YouTube,
+    </section>
+    <section>
+      <h2>How it rose to fame</h2>
+      <p>
+        Mukbangs gained popularity through social media influencers like
+        Tzuyang, Hamzy, Nikocado Avocado, Bloveslife, and Trisha Paytas,YouTube,
+        <br />
+        where creators could reach a global audience. The combination of food,
+        entertainment, and interaction made mukbangs a unique form of content
+        that
+        <br />
+        appealed to many viewers.
+      </p>
       <br />
-      where creators could reach a global audience. The combination of food,
-      entertainment, and interaction made mukbangs a unique form of content that
-      <br />
-      appealed to many viewers.
-    </p>
-    <br />
+    </section>
 
     <h2>Here is a video of a mukbang</h2>
     <!--
@@ -82,6 +103,51 @@
       referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen></iframe>
 
-    <h2>A table of the most popular mukbang YouTubers</h2>
+    <section>
+      <h2>A table of the most popular mukbang YouTubers</h2>
+      <!--
+      The table tag is used to create a table in html
+    -->
+      <table border="1" cellpadding="5" cellspacing="1">
+        <!--
+        The thead tag is used to group the header content in a table
+      -->
+        <thead>
+          <!--
+          The tr tag is used to define a row in a table
+        -->
+          <!--The th tag is used to define a header cell in a table-->
+          <tr>
+            <th>Channel Name</th>
+            <th>Zach Cho</th>
+            <th>Nikocado Avocado</th>
+            <th>Tzuyang</th>
+          </tr>
+        </thead>
+        <!--
+        The tbody tag is used to group the body content in a table
+      -->
+        <tbody>
+          <tr>
+            <td>subscribers</td>
+            <td>29M</td>
+            <td>4.7M</td>
+            <td>12.9M</td>
+          </tr>
+          <tr>
+            <td>videos</td>
+            <td>1.3k</td>
+            <td>799</td>
+            <td>1k</td>
+          </tr>
+          <tr>
+            <td>views</td>
+            <td>14 billion</td>
+            <td>10 billion</td>
+            <td>unknown</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </body>
 </html>
