@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>survey</title>
   </head>
   <body>
     <li>
@@ -12,32 +12,51 @@
       </ul>
     </li>
 
+    <!--
+      The fieldset tag is used to group related elements in a form
+    -->
     <fieldset>
+      <!--
+        The form tag is used to create an HTML form for user input
+      -->
       <form action="submit_survey.html" method="get">
         <h1>Mukbang Survey</h1>
         <h2>This is a website about Mukbangs.</h2>
         <br />
+        <!--
+          The label tag is used to define a label for an input element
+        -->
         <label for="mukbangs">How old are you?</label><br />
+        <!--
+          The input tag is used to create an input field where users can enter data.
+          The number id has a arow to increase or decrease the number.
+        -->
         <input type="number" id="mukbangs" name="age" /><br /><br /><br />
 
         <label for="mukbangs">What is a mukbang?</label>
         <br /><br />
         When people eat large quantities of food.
-        <input type="radio" id="mukbangs1" name="eating" value="Survey" /><br />
+        <!--
+          The radio button input type is used to create a radio button, allowing users to select one option from a set.
+        -->
+        <input type="radio" id="eating" name="mukbangs1" value="Survey" /><br />
         A sport where people eat food while running.
         <input
           type="radio"
-          id="mukbangs1"
-          name="running"
+          id="running"
+          name="mukbangs1"
           value="Survey" /><br />
         pro sleeping.
         <input
           type="radio"
-          id="mukbangs1"
-          name="pro_sleeping"
+          id="pro_sleeping"
+          name="mukbangs1"
           value="Survey" /><br /><br /><br />
 
         <label for="mukbangs">How did it come to fame?</label><br /><br />
+        <!--
+          y
+        -->
         <input type="text" id="mukbangs" name="fame" /><br /><br /><br />
 
         <label for="mukbang">Who is the most popular mukbang YouTuber</label
@@ -47,7 +66,9 @@
         <img
           src="images.html/caseoh-eating-v0-2b67u2tzwfwd1.webp"
           alt="some_one_eating"
-          width="500px" /><br /><br /><br />
+          width="500px" /><br /><br />
+        <label for="some_one_eating">Who is this?</label
+        ><br /><br /><br /><br />
 
         <input type="submit" />
       </form>
