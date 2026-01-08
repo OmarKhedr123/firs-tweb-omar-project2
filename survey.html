@@ -3,59 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>survey</title>
+    <title>survey - new webpage</title>
   </head>
   <body>
-    <li>
-      <ul>
-        <a href="index.html">Home</a>
-      </ul>
-    </li>
+    <!-- You need a nav tag. -->
+    <!-- lis go inside uls -->
+    <!-- Each anchor should be inside a li -->
+    <nav>
+      <li>
+        <ul>
+          <a href="index.html">Home</a>
+          <a href="survey.html">Survey</a>
+        </ul>
+      </li>
+    </nav>
 
     <!--
       The fieldset tag is used to group related elements in a form
     -->
-    <fieldset>
+    
       <!--
         The form tag is used to create an HTML form for user input
       -->
-      <form action="submit_survey.html" method="get">
+      <form method="get">
         <h1>Mukbang Survey</h1>
         <h2>This is a website about Mukbangs.</h2>
         <br />
         <!--
           The label tag is used to define a label for an input element
         -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">What is your name?</label><br />
+        <input type="text" id="name" name="name" /><br /><br />
+
         <label for="mukbangs">How old are you?</label><br />
         <!--
           The input tag is used to create an input field where users can enter data.
           The number id has a arow to increase or decrease the number.
         -->
         <input type="number" id="mukbangs" name="age" /><br /><br /><br />
+      </fieldset>
 
+
+      <fieldset>
         <label for="mukbangs">What is a mukbang?</label>
         <br /><br />
-        When people eat large quantities of food.
+        <input type="radio" id="eating" name="mukbangs1" value="Survey" />
+        When people eat large quantities of food.<br />
         <!--
           The radio button input type is used to create a radio button, allowing users to select one option from a set.
         -->
-        <input type="radio" id="eating" name="mukbangs1" value="Survey" /><br />
-        A sport where people eat food while running.
         <input
-          type="radio"
-          id="running"
-          name="mukbangs1"
-          value="Survey" /><br />
-        pro sleeping.
-        <input
+        type="radio"
+        id="running"
+        name="mukbangs1"
+        value="Survey" />
+        A sport where people eat food while running. <br />
+
+          <input
           type="radio"
           id="pro_sleeping"
           name="mukbangs1"
-          value="Survey" /><br /><br /><br />
+          value="Survey" />
+          pro sleeping.
+          <br /><br /><br />
 
         <label for="mukbangs">How did it come to fame?</label><br /><br />
         <!--
-          y
+          The text input type is used to create a single-line text
         -->
         <input type="text" id="mukbangs" name="fame" /><br /><br /><br />
 
@@ -67,8 +83,9 @@
           src="images.html/caseoh-eating-v0-2b67u2tzwfwd1.webp"
           alt="some_one_eating"
           width="500px" /><br /><br />
-        <label for="some_one_eating">Who is this?</label
-        ><br /><br /><br /><br />
+        <label for="some_one_eating">Who is this?</label><br />
+        <input type="text" id="some_one_eating" name="some_one_eating" /><br />
+        <br /><br /><br /><br />
 
         <input type="submit" />
       </form>
